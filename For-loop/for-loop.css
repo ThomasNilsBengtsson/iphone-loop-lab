@@ -1,0 +1,111 @@
+.indicatorDot {
+  width: 30px;
+  height: 30px;
+  background-color: #ffab56;
+  border-radius: 50%;
+  position: fixed;
+  /* Define the radius */
+  radius: 15px;
+}
+
+.hollowCircle {
+  width: 900px;
+  height: 900px;
+  border: 5px solid #000; /* Change the color to your preference */
+  border-radius: 50%;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#line {
+  position: absolute;
+  top: 23%;
+  left: 50%;
+  width: 4px;
+  height: 130px;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* the line's color (black) and opacity (50%) */
+}
+
+.targetDot {
+  width: 70%; /* Half the size of the hollowCircle */
+  height: 70%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  position: absolute;
+  /* Define the radius */
+  radius: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.draggableDot {
+  width: 100px;
+  height: 100px;
+  background-color: #005780;
+  border-radius: 50%;
+  position: fixed;
+  left: 10%;
+  top: 10%;
+  transform: translate(-50%, -50%);
+  touch-action: none;
+}
+
+.draggableRectangle {
+  width: 100px;
+  height: 100px;
+  background-color: #7c0a02;
+  position: fixed;
+  left: 10%;
+  top: 18%;
+  transform: translate(-50%, -50%);
+}
+
+.draggableTriangle {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid #999900;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+#startLoopBtn {
+  position: absolute;
+  font-size: 1.5em;
+  padding: 20px;
+  width: 200px;
+  height: 100px;
+  left: 50%;
+  top: 5%;
+  transform: translate(-50%, -50%); /* This line will center the button */
+}
+
+#laps {
+  font-size: 50px; /* Adjust the font size as desired */
+  position: absolute; /* Set the position to absolute */
+  top: 15%; /* Adjust the top position */
+  left: 50%; /* Adjust the left position */
+  transform: translate(-50%, -50%); /* Center the div using transform */
+  color: #333; /* Adjust the color as desired */
+
+  /* Add these lines to center align the countdown */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+#counter {
+  font-size: 48px; /* Adjust the font size as desired */
+}
