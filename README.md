@@ -8,6 +8,9 @@ Open the CodePen demo on an iPhone, grant motion-sensor access, and tilt the pho
 | **For-loop** | Tilt until the ball completes *N* laps. | Fixed-iteration loops (`for (i = 0; i < N; i++)`). |
 | **While-loop** | Keep tilting until you level the phone. | Condition-controlled loops (`while (!isLevel)`). |
 
+
+![Project logo](IphoneLoop.png)
+
 ---
 
 ## What it actually is
